@@ -1,9 +1,7 @@
 provider "azurerm" {
-  version = "2.0"
-  features {
-    key_vault = []
-  }
+  features = ["availability_zones"]
 }
+
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
   location = "West US"
