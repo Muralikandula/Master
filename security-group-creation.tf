@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-    }
-  }
-}
-
-# Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
   subscription_id = "e59e3c1c-b7e6-4d4f-97f8-c582e9560454"
